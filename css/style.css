@@ -1,0 +1,41 @@
+.navbar-view {
+	position: absolute;
+	bottom: 0;
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+	margin-bottom: 0;
+}
+
+.navbar-view ul{
+	display: flex;
+	width: 100%;
+}
+
+.navbar-view ul li{
+	flex-grow: 1;
+	text-align: center;
+}
+
+.navbar-view .glyphicon {
+	font-size: 24px;
+	display: block;
+	text-align: center;
+	padding-bottom: 8px;
+}
+
+header {
+	background: linear-gradient(to bottom right, #666666, #336699);
+}
+
+.header-form {
+	margin-top: 7%;
+	opacity: 0;
+    background: white;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.header-form label {
+    color: black;
+}
