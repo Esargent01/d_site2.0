@@ -43,17 +43,14 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand" href="#page-top">Saenz Therapeutic Care</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll contrast" href="javascript:;">Contact Us</a>
+                        <a class="contrast" href="javascript:;">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -62,7 +59,7 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <div ng-view></div>
+    <div class="page {{pageClass}} content-container" ng-view></div>
 
     <nav class="navbar navbar-default navbar-view">
         <div class="container">
@@ -70,16 +67,16 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a class="page-scroll" href="#home"><span class="glyphicon glyphicon-home"></span>Home</a>
+                        <a href="#home"><span class="glyphicon glyphicon-home"></span>Home</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#payment"><span class="glyphicon glyphicon-euro"></span>Insurance/Payment</a>
+                        <a href="#payment"><span class="glyphicon glyphicon-euro"></span>Insurance/Payment</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#clinician"><span class="glyphicon glyphicon-user"></span>Clinician</a>
+                        <a href="#clinician"><span class="glyphicon glyphicon-user"></span>Clinician</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#location"><span class="glyphicon glyphicon-globe"></span>Location</a>
+                        <a href="#location"><span class="glyphicon glyphicon-globe"></span>Location</a>
                     </li>
                 </ul>
             </div>
@@ -223,13 +220,8 @@
     <script src="js/new-age.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-animate.min.js"></script>
     <script type="text/javascript" src="js/views.js"></script>
-
-    <script type="text/javascript">
-        $('.showAppt').click(function(){
-            $('.header-form').animate({opacity:1});
-        });
-    </script>
 
 </body>
 

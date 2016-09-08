@@ -1,3 +1,12 @@
+header {
+	background: linear-gradient(to bottom right, #666666, #336699);
+	overflow: hidden;
+}
+
+.btn-xl {
+	font-size: 14px;
+}
+
 .navbar-view {
 	position: absolute;
 	bottom: 0;
@@ -23,19 +32,123 @@
 	padding-bottom: 8px;
 }
 
-header {
-	background: linear-gradient(to bottom right, #666666, #336699);
-}
-
 .header-form {
-	margin-top: 7%;
-	opacity: 0;
+	margin-top: 5%;
+	left: 60%;
     background: white;
     border: 2px solid transparent;
     border-radius: 5px;
     padding: 10px;
+    position: relative;
 }
 
-.header-form label {
+.header-form h2 {
+    margin: 15px 0 20px 5px;
+}
+
+.header-form label,
+.header-form h2 {
     color: black;
+}
+
+.header-form p {
+	padding-top: 10px;
+    font-size: 15px;
+}
+
+.header-form .btn {
+    font-size: 13px;
+}
+
+.header-form .close {
+    font-size: 23px;
+    position: absolute;
+    right: 25px;
+    top: 15px;
+}
+
+.content-container {
+	height: 100%;
+}
+
+.btn-outline.active, .btn-outline:active, .btn-outline:focus, .btn-outline:hover {
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+
+.page.ng-leave { z-index:9999; }
+.page.ng-enter { z-index:8888; }
+
+.page-home.ng-leave {  
+    -webkit-animation:fadeout 0.3s ease-out;
+	-moz-animation:fadeout 0.3s ease-out;
+	animation:fadeout 0.3s ease-out;    
+}
+
+.page-home.ng-enter {  
+    -webkit-animation:fadein 0.3s ease-in;
+	-moz-animation:fadein 0.3s ease-in;
+	animation:fadein 0.3s ease-in;    
+}
+
+.page-clinician.ng-leave {  
+    -webkit-animation:fadeout 0.6s ease-out;
+	-moz-animation:fadeout 0.6s ease-out;
+	animation:fadeout 0.6s ease-out;    
+}
+
+.page-clinician.ng-enter {  
+    -webkit-animation:fadein 0.3s ease-in;
+	-moz-animation:fadein 0.3s ease-in;
+	animation:fadein 0.3s ease-in;    
+}
+
+.page-location.ng-leave {  
+    -webkit-animation:fadeout 0.6s ease-out;
+	-moz-animation:fadeout 0.6s ease-out;
+	animation:fadeout 0.6s ease-out;    
+}
+
+.page-location.ng-enter {  
+    -webkit-animation:fadein 0.3s ease-in;
+	-moz-animation:fadein 0.3s ease-in;
+	animation:fadein 0.3s ease-in;    
+}
+
+.page-payment.ng-leave {  
+    -webkit-animation:fadeout 0.6s ease-out;
+	-moz-animation:fadeout 0.6s ease-out;
+	animation:fadeout 0.6s ease-out;    
+}
+
+.page-payment.ng-enter {  
+    -webkit-animation:fadein 0.3s ease-in;
+	-moz-animation:fadein 0.3s ease-in;
+	animation:fadein 0.3s ease-in;    
+}
+
+@keyframes fadein {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+@-moz-keyframes fadein {
+	from {opacity:0;}
+    to {opacity:1;}
+}
+@-webkit-keyframes fadein {
+	from {opacity:0;}
+    to {opacity:1;}
+}
+
+@keyframes fadeout {
+    from {opacity:1;}
+    to {opacity:0;}
+}
+@-moz-keyframes fadeout {
+	from {opacity:1;}
+    to {opacity:0;}
+}
+@-webkit-keyframes fadeout {
+	from {opacity:1;}
+    to {opacity:0;}
 }
