@@ -38,6 +38,12 @@ app.directive('contactForm',function(){
 		    });
 		}
 	};
+}).
+directive('clinicianTabs', function(){
+   return {
+      restrict : 'E',
+      templateUrl : 'components/tabs.html'
+   }
 });
 
 app.controller('homeCtrl', function($scope){

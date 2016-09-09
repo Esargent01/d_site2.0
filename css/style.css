@@ -1,18 +1,29 @@
 header {
 	background: linear-gradient(to bottom right, #666666, #336699);
-	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: scroll; 
+	padding-top: 51px;
+}
+
+h2 {
+	font-size: 40px;
 }
 
 .btn-xl {
 	font-size: 14px;
 }
 
+.showAppt {
+	margin-top: 20px;
+}
+
+.center-content {
+	margin-top: 25%;
+}
+
 .navbar-view {
-	position: absolute;
-	bottom: 0;
 	background: rgba(0,0,0,0.5);
 	width: 100%;
-	margin-bottom: 0;
 }
 
 .navbar-view ul{
@@ -33,7 +44,7 @@ header {
 }
 
 .header-form {
-	margin-top: 5%;
+	margin-top: 3%;
 	left: 60%;
     background: white;
     border: 2px solid transparent;
@@ -79,76 +90,59 @@ header {
 .page.ng-leave { z-index:9999; }
 .page.ng-enter { z-index:8888; }
 
-.page-home.ng-leave {  
-    -webkit-animation:fadeout 0.3s ease-out;
-	-moz-animation:fadeout 0.3s ease-out;
-	animation:fadeout 0.3s ease-out;    
-}
-
 .page-home.ng-enter {  
-    -webkit-animation:fadein 0.3s ease-in;
-	-moz-animation:fadein 0.3s ease-in;
-	animation:fadein 0.3s ease-in;    
-}
-
-.page-clinician.ng-leave {  
-    -webkit-animation:fadeout 0.6s ease-out;
-	-moz-animation:fadeout 0.6s ease-out;
-	animation:fadeout 0.6s ease-out;    
+    -webkit-animation:fadein 0.3s ease-in-out;
+	-moz-animation:fadein 0.3s ease-in-out;
+	animation:fadein 0.3s ease-in-out;    
 }
 
 .page-clinician.ng-enter {  
-    -webkit-animation:fadein 0.3s ease-in;
-	-moz-animation:fadein 0.3s ease-in;
-	animation:fadein 0.3s ease-in;    
-}
-
-.page-location.ng-leave {  
-    -webkit-animation:fadeout 0.6s ease-out;
-	-moz-animation:fadeout 0.6s ease-out;
-	animation:fadeout 0.6s ease-out;    
+    -webkit-animation:fadein 0.3s ease-in-out;
+	-moz-animation:fadein 0.3s ease-in-out;
+	animation:fadein 0.3s ease-in-out;    
 }
 
 .page-location.ng-enter {  
-    -webkit-animation:fadein 0.3s ease-in;
-	-moz-animation:fadein 0.3s ease-in;
-	animation:fadein 0.3s ease-in;    
-}
-
-.page-payment.ng-leave {  
-    -webkit-animation:fadeout 0.6s ease-out;
-	-moz-animation:fadeout 0.6s ease-out;
-	animation:fadeout 0.6s ease-out;    
+    -webkit-animation:fadein 0.3s ease-in-out;
+	-moz-animation:fadein 0.3s ease-in-out;
+	animation:fadein 0.3s ease-in-out;    
 }
 
 .page-payment.ng-enter {  
-    -webkit-animation:fadein 0.3s ease-in;
-	-moz-animation:fadein 0.3s ease-in;
-	animation:fadein 0.3s ease-in;    
+    -webkit-animation:fadein 0.3s ease-in-out;
+	-moz-animation:fadein 0.3s ease-in-out;
+	animation:fadein 0.3s ease-in-out;    
 }
 
 @keyframes fadein {
-    from {opacity:0;}
+    from {opacity:.6;}
     to {opacity:1;}
 }
 @-moz-keyframes fadein {
-	from {opacity:0;}
+	from {opacity:.6;}
     to {opacity:1;}
 }
 @-webkit-keyframes fadein {
-	from {opacity:0;}
+	from {opacity:.6;}
     to {opacity:1;}
 }
 
-@keyframes fadeout {
-    from {opacity:1;}
-    to {opacity:0;}
+.clinician-img {
+	width: 80%;
+    position: absolute;
+    top: 65px;
 }
-@-moz-keyframes fadeout {
-	from {opacity:1;}
-    to {opacity:0;}
+
+.tab-content {
+	padding: 10px 0;
 }
-@-webkit-keyframes fadeout {
-	from {opacity:1;}
-    to {opacity:0;}
+
+.nav-tabs>li {
+	font-size: 17px;
+}
+
+.insurance-icons {
+	color: black;
+	text-align: center;
+	background: white;
 }
